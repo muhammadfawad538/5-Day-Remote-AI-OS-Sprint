@@ -1,4 +1,0 @@
-Score: 100.0/100 | Rec: advance | Criteria: 2
-  100/100 1. [Must-have] Python (pandas, NumPy, scikit-learn)
-  100/100 2. [Must-have] Deep learning frameworks (PyTorch or TensorFlow)
-Rationale: The candidate achieves a perfect score (100/100) on both critical must-have criteria: Python data science stack and deep learning frameworks. Dr. Kapoor's specific experience with PyTorch and Hugging Face Transformers directly aligns with the role requirements. With 5 years of experience and a curre
