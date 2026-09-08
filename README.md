@@ -157,7 +157,9 @@ recent completed eval run (may be partial if rate limits interrupted it).
 ├── RUNBOOK.md                # operator / maintainer instructions
 ├── CASE_STUDY.md             # full project write-up
 ├── AI_COLLABORATION_NOTE.md  # what was AI-built vs. human-decided
-└── DEMO_SCRIPT.md            # 5-minute demo recording outline
+├── FEEDBACK.md               # proxy-user feedback and changes made in response
+└── docs/
+    └── project_context.md    # project instructions and constraints
 ```
 
 ---
