@@ -1,0 +1,52 @@
+# Senior Backend Engineer
+
+**Company:** Northwind Systems
+**Department:** Platform Engineering
+**Location:** Remote (US-based)
+**Employment Type:** Full-time
+
+---
+
+## About the Role
+
+Northwind Systems is building a high-throughput data pipeline platform used by
+fortune 500 clients. We're looking for a Senior Backend Engineer to own core
+services, improve reliability, and mentor junior engineers.
+
+---
+
+## Responsibilities
+
+- Design and build RESTful APIs and background job processors in Python.
+- Own database schema design and query optimisation for PostgreSQL.
+- Participate in on-call rotation and incident response.
+- Write and review code, enforce standards, and mentor 2–3 junior engineers.
+- Collaborate with product and data teams to translate requirements into
+  technical specs.
+- Contribute to internal tooling and developer experience improvements.
+
+---
+
+## Must-Have Qualifications
+
+- **5+ years** of professional backend engineering experience.
+- Expert-level **Python** (3.10+, type hints, async/await, pytest).
+- Production experience with **PostgreSQL** — schema design, indexing, query
+  optimisation.
+- Experience building and operating **REST APIs** (FastAPI, Flask, or Django).
+- Familiarity with **Docker** and containerised deployments.
+- Experience writing tests (unit, integration, and some E2E).
+
+## Nice-to-Have Qualifications
+
+- Experience with message queues (Kafka, RabbitMQ, or AWS SQS).
+- Familiarity with AWS services (ECS, RDS, CloudWatch).
+- Experience with CI/CD pipelines (GitHub Actions, GitLab CI).
+- Contributions to open-source projects.
+
+---
+
+## Education
+
+- Bachelor's degree in Computer Science or related field, OR equivalent
+  practical experience.

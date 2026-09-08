@@ -1,0 +1,37 @@
+JD parsed: 1699 chars
+Resume parsed: 2082 chars
+Calling extract_jd...
+      Scoring done in 28.51s
+
+============================================================
+SCORECARD
+============================================================
+  Candidate:  Elena Vasquez
+  Role:       Senior Backend Engineer
+  Overall:    92.0/100
+  Confidence: high
+  Recommendation: ADVANCE
+
+  Rationale:
+    Elena Vasquez is an exceptional match for the Senior Backend Engineer role. She meets all critical technical requirements with perfect scores in Python, PostgreSQL, REST APIs, FastAPI, and Flask. While she lacks experience in Django, this is not a must-have criterion for this specific profile given her strength in other backend frameworks. Her 8 years of experience and leadership on high-throughput microservices (payments, multi-tenant) align perfectly with senior-level expectations.
+
+  Criterion Scores:
+    [██████████] 100/100  Python
+           Evidence: "Strong focus on Python, PostgreSQL, and distributed systems. ... Lead engineer for the payments processing microservice (Python / FastAPI / PostgreSQL..."
+    [██████████] 100/100  PostgreSQL
+           Evidence: "Strong focus on Python, PostgreSQL, and distributed systems. ... Lead engineer for the payments processing microservice (Python / FastAPI / PostgreSQL..."
+    [██████████] 100/100  REST APIs
+           Evidence: "Backend engineer with 8 years of experience building high-throughput APIs ... Developed and maintained 4 RESTful services in Python (Flask) ... REST A..."
+    [██████████] 100/100  FastAPI
+           Evidence: "Lead engineer for the payments processing microservice (Python / FastAPI / PostgreSQL) ... FastAPI"
+    [██████████] 100/100  Flask
+           Evidence: "Developed and maintained 4 RESTful services in Python (Flask) ... Flask"
+    [░░░░░░░░░░]   0/100  Django
+           Evidence: ""
+
+============================================================
+DONE: ADVANCE — 92.0/100
+JD extracted: Senior Backend Engineer
+Calling extract_resume...
+Resume extracted: Elena Vasquez
+ALL DONE

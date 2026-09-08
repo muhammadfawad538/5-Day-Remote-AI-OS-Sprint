@@ -1,0 +1,51 @@
+# Senior Full-Stack Engineer
+
+**Company:** Pinnacle Digital
+**Department:** Product Engineering
+**Location:** Hybrid — New York, NY (3 days/week in office)
+**Employment Type:** Full-time
+
+---
+
+## About the Role
+
+Pinnacle Digital is building a next-generation SaaS platform for e-commerce analytics.
+We need a Senior Full-Stack Engineer who can own features end-to-end, from React
+front-ends to Node.js APIs.
+
+---
+
+## Responsibilities
+
+- Build and maintain React front-end components and Node.js REST/GraphQL APIs.
+- Own database schema design and optimisation (PostgreSQL).
+- Participate in architectural reviews and technical planning.
+- Mentor junior engineers through code review and pair programming.
+- Collaborate with designers and product managers to ship polished features.
+- Contribute to CI/CD pipelines and developer tooling.
+
+---
+
+## Must-Have Qualifications
+
+- **5+ years** of professional full-stack engineering experience.
+- Expert-level **React** (hooks, state management, TypeScript).
+- Production experience with **Node.js** and Express or similar frameworks.
+- Experience with **PostgreSQL** or another relational database in production.
+- Familiarity with **TypeScript** and type-safe development practices.
+- Experience with **CI/CD** pipelines (GitHub Actions, GitLab CI, or similar).
+
+## Nice-to-Have Qualifications
+
+- Experience with **GraphQL** (Apollo, Relay, or similar).
+- Familiarity with **AWS** (ECS, RDS, S3, CloudFront).
+- Experience with **Docker** and containerised deployments.
+- Contributions to **open-source** projects.
+- Experience with **monitoring/observability** tools (Datadog, New Relic).
+
+---
+
+## Education
+
+- Bachelor's degree in Computer Science or related field, OR equivalent
+  practical experience.

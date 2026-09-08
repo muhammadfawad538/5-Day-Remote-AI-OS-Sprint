@@ -1,0 +1,183 @@
+{
+  "_meta": {
+    "description": "Labeled test cases for the recruiting-screener eval harness.",
+    "format_version": "1.0",
+    "total_cases": 12,
+    "categories": {
+      "advance": 3,
+      "hold": 3,
+      "reject": 3,
+      "edge": 2,
+      "failure": 1
+    },
+    "notes": "All candidates, JDs, and companies are fictional. Candidates are labeled SYNTHETIC to make this explicit. No real personal data is included."
+  },
+
+  "test_cases": [
+    {
+      "id": "TC-01",
+      "label": "synthetic",
+      "category": "advance",
+      "description": "Strong match — senior backend engineer with all required skills and 8 years experience.",
+      "jd_file": "data/samples/jd_senior_backend_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_strong.md",
+      "expected_outcome": "advance",
+      "expected_key_evidence": [
+        "8 years backend experience",
+        "Python and PostgreSQL proficiency",
+        "Led team of engineers"
+      ]
+    },
+    {
+      "id": "TC-02",
+      "label": "synthetic",
+      "category": "advance",
+      "description": "Strong match — full-stack engineer with relevant degree and direct stack overlap.",
+      "jd_file": "data/samples/jd_fullstack_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_fullstack.md",
+      "expected_outcome": "advance",
+      "expected_key_evidence": [
+        "6 years full-stack experience",
+        "React and Node.js proficiency",
+        "Scaled product to 200k users"
+      ]
+    },
+    {
+      "id": "TC-03",
+      "label": "synthetic",
+      "category": "advance",
+      "description": "Strong match — data scientist with PhD and published research in NLP.",
+      "jd_file": "data/samples/jd_senior_data_scientist.txt",
+      "resume_file": "data/samples/resume_candidate_ds_phd.md",
+      "expected_outcome": "advance",
+      "expected_key_evidence": [
+        "PhD in Machine Learning",
+        "5 years industry experience",
+        "Published peer-reviewed papers"
+      ]
+    },
+    {
+      "id": "TC-04",
+      "label": "synthetic",
+      "category": "hold",
+      "description": "Marginal match — meets core requirements but lacks depth in one must-have area.",
+      "jd_file": "data/samples/jd_senior_backend_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_marginal.md",
+      "expected_outcome": "hold",
+      "expected_key_evidence": [
+        "4 years backend experience",
+        "Python experience",
+        "No production PostgreSQL"
+      ]
+    },
+    {
+      "id": "TC-05",
+      "label": "synthetic",
+      "category": "hold",
+      "description": "Marginal match — strong generalist but missing one key domain skill.",
+      "jd_file": "data/samples/jd_fullstack_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_generalist.md",
+      "expected_outcome": "hold",
+      "expected_key_evidence": [
+        "8 years software engineering",
+        "React and TypeScript skills",
+        "No Node.js backend"
+      ]
+    },
+    {
+      "id": "TC-06",
+      "label": "synthetic",
+      "category": "hold",
+      "description": "Recent graduate with internship experience — potential but underqualified on paper.",
+      "jd_file": "data/samples/jd_senior_data_scientist.txt",
+      "resume_file": "data/samples/resume_candidate_junior.md",
+      "expected_outcome": "hold",
+      "expected_key_evidence": [
+        "BS in Statistics",
+        "Summer internship analytics",
+        "Strong academic record"
+      ]
+    },
+    {
+      "id": "TC-07",
+      "label": "synthetic",
+      "category": "reject",
+      "description": "Clear mismatch — wrong domain entirely, no relevant experience.",
+      "jd_file": "data/samples/jd_senior_backend_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_wrong_domain.md",
+      "expected_outcome": "reject",
+      "expected_key_evidence": [
+        "10 years marketing experience",
+        "No software engineering",
+        "MBA not technical degree"
+      ]
+    },
+    {
+      "id": "TC-08",
+      "label": "synthetic",
+      "category": "reject",
+      "description": "Overqualified / wrong seniority — staff-level engineer applying for junior role.",
+      "jd_file": "data/samples/jd_fullstack_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_overqualified.md",
+      "expected_outcome": "reject",
+      "expected_key_evidence": [
+        "15 years Staff/Principal level",
+        "Managed teams of 20+",
+        "Overqualified for IC role"
+      ]
+    },
+    {
+      "id": "TC-09",
+      "label": "synthetic",
+      "category": "reject",
+      "description": "Resume is largely empty / placeholder text — cannot extract meaningful data.",
+      "jd_file": "data/samples/jd_senior_backend_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_empty.md",
+      "expected_outcome": "reject",
+      "expected_key_evidence": [
+        "Placeholder text only",
+        "No work history",
+        "No skills or education"
+      ]
+    },
+    {
+      "id": "TC-10",
+      "label": "synthetic",
+      "category": "edge",
+      "description": "Career gap of 3 years — must determine if experience is still current.",
+      "jd_file": "data/samples/jd_senior_data_scientist.txt",
+      "resume_file": "data/samples/resume_candidate_career_gap.md",
+      "expected_outcome": "hold",
+      "expected_key_evidence": [
+        "6 years ML experience",
+        "3-year career gap",
+        "Gap explained by caregiving"
+      ]
+    },
+    {
+      "id": "TC-11",
+      "label": "synthetic",
+      "category": "edge",
+      "description": "Non-standard career path — bootcamp grad with strong open-source contributions.",
+      "jd_file": "data/samples/jd_fullstack_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_bootcamp.md",
+      "expected_outcome": "hold",
+      "expected_key_evidence": [
+        "No CS degree",
+        "Coding bootcamp graduate",
+        "500+ open-source contributions"
+      ]
+    },
+    {
+      "id": "TC-12",
+      "label": "synthetic",
+      "category": "failure",
+      "description": "Scanned image PDF with no extractable text — must trigger ParseError.",
+      "jd_file": "data/samples/jd_senior_backend_engineer.txt",
+      "resume_file": "data/samples/resume_candidate_scanned_image.pdf",
+      "expected_outcome": "parse_error",
+      "expected_key_evidence": [],
+      "expected_error": "PDF contained no extractable text (scanned image? OCR needed)"
+    }
+  ]
+}

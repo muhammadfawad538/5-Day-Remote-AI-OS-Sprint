@@ -1,0 +1,51 @@
+2026-09-05 21:38:28,469 [INFO] recruiting_screener: Extracting JD structure from 1699 characters
+2026-09-05 21:38:32,149 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 21:38:32,181 [INFO] recruiting_screener: JD extraction completed in 3.71s
+2026-09-05 21:38:32,182 [INFO] recruiting_screener: Extracting resume structure from 2082 characters
+2026-09-05 21:38:35,077 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-09-05 21:38:35,078 [INFO] recruiting_screener: Resume extraction completed in 2.90s
+2026-09-05 21:38:35,078 [INFO] recruiting_screener: Scoring candidate 'Elena Vasquez' against 'Senior Backend Engineer'
+2026-09-05 21:38:36,758 [INFO] httpx: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+============================================================
+RECRUITING SCREENER — Phase 2 v0 Demo
+============================================================
+
+[1/4] Parsing JD: jd_senior_backend_engineer.txt
+      Extracted 1699 characters in 0.00s
+[2/4] Parsing resume: resume_candidate_strong.md
+      Extracted 2082 characters in 0.00s
+[3/4] Extracting structured fields via Claude tool use...
+      JD: Senior Backend Engineer @ Northwind Systems
+      Resume: Elena Vasquez, N/A
+      Extraction completed in 6.61s
+[4/4] Scoring candidate...
+Traceback (most recent call last):
+  File "E:\must-assesment\demo_v0.py", line 84, in <module>
+    main()
+    ~~~~^^
+  File "E:\must-assesment\demo_v0.py", line 54, in main
+    scorecard = score_candidate(jd, resume)
+  File "E:\must-assesment\pipeline\scorer.py", line 294, in score_candidate
+    criterion_scores = _score_criteria(jd, resume)
+  File "E:\must-assesment\pipeline\scorer.py", line 108, in _score_criteria
+    response = _client.chat.completions.create(
+        model=GROQ_MODEL,
+    ...<17 lines>...
+        ],
+    )
+  File "E:\Python313\Lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/openai/v1/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<45 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\Python313\Lib\site-packages\groq\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Python313\Lib\site-packages\groq\_base_client.py", line 1044, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': "Request too large for model `qwen/qwen3.8-27b` in organization `org_01k8sq4ftvej4t94fyv5b9af3w` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1127. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing", 'type': 'tokens', 'code': 'rate_limit_exceeded'}}

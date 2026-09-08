@@ -1,0 +1,54 @@
+# Senior Data Scientist
+
+**Company:** Meridian Health Tech
+**Department:** Data & AI
+**Location:** Remote (US-based)
+**Employment Type:** Full-time
+
+---
+
+## About the Role
+
+Meridian Health Tech is using machine learning to improve patient outcomes and
+reduce healthcare costs. We're seeking a Senior Data Scientist to build and
+deploy predictive models at scale.
+
+---
+
+## Responsibilities
+
+- Design, train, and evaluate machine learning models for healthcare applications.
+- Collaborate with clinical and engineering teams to translate business problems
+  into ML solutions.
+- Own the end-to-end ML pipeline: data ingestion, feature engineering, model
+  training, evaluation, and deployment.
+- Write production-quality code (Python) and comprehensive tests.
+- Communicate results and model behaviour to non-technical stakeholders.
+- Mentor junior data scientists and contribute to our data science best practices.
+
+---
+
+## Must-Have Qualifications
+
+- **Master's degree** in Machine Learning, Statistics, Computer Science, or a
+  related quantitative field. (PhD preferred.)
+- **5+ years** of industry experience building and deploying ML models.
+- Expert-level **Python** for data science (pandas, NumPy, scikit-learn).
+- Production experience with **deep learning** frameworks (PyTorch or TensorFlow).
+- Strong understanding of **NLP** and/or **computer vision** techniques.
+- Experience with **MLOps** tools (MLflow, Kubeflow, or similar).
+
+## Nice-to-Have Qualifications
+
+- Experience with **healthcare** or **clinical** data (FHIR, EHR).
+- Familiarity with **cloud ML platforms** (AWS SageMaker, GCP Vertex AI).
+- Published **research** in top-tier ML venues (NeurIPS, ICML, ACL, CVPR).
+- Experience with **large language models** and prompt engineering.
+- Proficiency in **SQL** and experience with large-scale data warehouses.
+
+---
+
+## Education
+
+- Master's degree in a quantitative field (PhD preferred).
+- Equivalent practical experience may substitute for formal education.
