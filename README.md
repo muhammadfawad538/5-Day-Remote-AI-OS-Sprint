@@ -32,8 +32,8 @@ to a human first. Every score cites the specific resume text that supports it.
 ### 1. Clone and create a virtual environment
 
 ```bash
-git clone <your-repo-url>
-cd recruiting-screener
+git clone git@github.com:muhammadfawad538/5-Day-Remote-AI-OS-Sprint.git
+cd 5-Day-Remote-AI-OS-Sprint
 python -m venv .venv
 # Windows:
 .venv\Scripts\activate
